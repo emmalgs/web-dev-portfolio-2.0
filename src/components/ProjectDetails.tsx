@@ -1,4 +1,6 @@
-function ProjectDetails() {
+import { ProjectDetailsProps } from "../types";
+
+function ProjectDetails(props: ProjectDetailsProps) {
   return (
     <>
       <h1>Project Details</h1>
