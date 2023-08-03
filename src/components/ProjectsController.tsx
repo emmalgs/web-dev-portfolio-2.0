@@ -2,13 +2,14 @@ import { useState } from 'react';
 import { ProjectObject } from '../types';
 import ProjectDetails from "./ProjectDetails";
 import ProjectList from "./ProjectList";
-import allProjects from "../assets/content/projectData";
+import allProjects from "../assets/store/projectData";
 
 function ProjectController() {
   const [selectedProject, setSelectedProject] = useState<ProjectObject | null>(null);
 
   const handleProjectClick = (id: number) => {
     const selection: ProjectObject = allProjects.filter(project => project.id === id)[0]
+    console.log(selection)
     setSelectedProject(selection);
   }
 
@@ -25,8 +26,10 @@ function ProjectController() {
       <ProjectList list={allProjects} projectClick={handleProjectClick} />
   }
 
-  return (
+return (
+  <>
     {currentlyVisible}
+  </>
   )
 }
 
