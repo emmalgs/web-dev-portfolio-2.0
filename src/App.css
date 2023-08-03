@@ -6,24 +6,47 @@
   --orange: #E49B25;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.project-card {
+  border: 3px solid var(--black);
+  width: 70vw;
+  margin: 2em;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.pc-detail-btn {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  margin-top: -8px;
+  border-top: 60px solid var(--orange);
+  border-left: 90px solid transparent;
+  border-bottom: 20px solid transparent;
+  grid-area: 1 / 10 / 2 / 11;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.pc-title {
+  grid-area: 1 / 1 / 2 / 5;
+
+  margin: 1em;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.pc-desc {
+  grid-area: 3 / 2 / 9 / 11;
+}
+
+.pc-link {
+  grid-area: 9 / 2 / 10 / 5;
+}
+
+.pc-img {
+  z-index: -1;
+  grid-area: 1 / 8 / 11 / 11;
+  background-color: var(--pink);
+  margin: 1em;
 }
 
 @keyframes logo-spin {
@@ -41,10 +64,3 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
