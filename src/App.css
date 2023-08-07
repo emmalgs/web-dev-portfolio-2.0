@@ -8,7 +8,7 @@
 
 .project-card {
   border: 3px solid var(--black);
-  width: 70vw;
+  width: 700px;
   margin: 2em;
   padding: 5px;
 
@@ -22,8 +22,8 @@
   width: 0;
   height: 0;
   margin-top: -8px;
-  border-top: 60px solid var(--orange);
-  border-left: 90px solid transparent;
+  border-top: 50px solid var(--orange);
+  border-left: 78px solid transparent;
   border-bottom: 20px solid transparent;
   grid-area: 1 / 10 / 2 / 11;
 }
@@ -44,9 +44,62 @@
 
 .pc-img {
   z-index: -1;
-  grid-area: 1 / 8 / 11 / 11;
+  grid-area: 1 / 7 / 11 / 11;
   background-color: var(--pink);
-  margin: 1em;
+  margin: 5px;
+}
+
+.pc-img img {
+  width: 100%;
+  padding: 2px;
+  margin: auto;
+}
+
+/* Project Details Page */
+
+.project-details-main {
+  border: 3px solid var(--black);
+  padding: 10px;
+  margin: 2em;
+  width: 600px;
+  height: 600px;
+
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+}
+
+.pd-title {
+  grid-area: 1 / 1 / 2 / 11;
+  font-size: 36px;
+}
+
+.pd-desc {
+  grid-area: 8 / 1 / 10 / 11;
+}
+
+.project-image-detail {
+  grid-area: 3 / 3 / 8 / 9;
+  background-color: var(--green);
+}
+
+.project-image-detail img {
+  width: 100%;
+}
+
+.pd-link {
+  grid-area: 10 / 1 / 11 / 11
+}
+
+.pd-back-btn {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  margin-top: -13px;
+  border-top: 70px solid var(--blue);
+  border-left: 73px solid transparent;
+  border-bottom: 20px solid transparent;
+  grid-area: 1 / 10 / 2 / 11;
 }
 
 @keyframes logo-spin {
