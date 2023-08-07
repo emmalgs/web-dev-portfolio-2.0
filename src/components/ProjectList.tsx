@@ -17,8 +17,11 @@ function ProjectList(props: ProjectListProps) {
             <p className="pc-link">
               <a href={project.link}>View Code</a>
             </p>
-            <div className="pc-img">
-              <img src={project.imgSrc} />
+            <div className="pc-img" style={{
+              backgroundImage: `url(${project.imgSrc})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}>
             </div>
           </div>
         );
