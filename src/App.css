@@ -18,7 +18,15 @@ body {
   flex-direction: column;
 
   padding: 1em;
-  margin: 2em;
+  width: 80%;
+  margin: auto;
+}
+
+.projects-main h1 {
+  margin: 0 0 0 -50px;
+  font-size: 48px;
+  line-height: 40px;
+
 }
 
 .project-card {
