@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ProjectObject } from '../types';
+import Header from './Header';
 import ProjectDetails from "./ProjectDetails";
 import ProjectList from "./ProjectList";
 import allProjects from "../assets/store/projectData";
@@ -27,9 +28,10 @@ function ProjectController() {
   }
 
 return (
-  <>
+  <div>
+    <Header />
     {currentlyVisible}
-  </>
+  </div>
   )
 }
 
