@@ -4,6 +4,8 @@
 
 ## Description
 
+An updated version of my web developement portfolio using Typescript with React.
+
 ## React Component Diagram
 
 ![react component diagram](./src/assets/img/components.png)
@@ -32,7 +34,7 @@
    <img src='./src/assets/img/projectdetails.png' width="300px" >
 </div>
 
-#### About PAge
+#### About Page
 
 <div align="center">
    <img src='./src/assets/img/About.png' width="300px" >
