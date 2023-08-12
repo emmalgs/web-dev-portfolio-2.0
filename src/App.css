@@ -13,6 +13,29 @@ body {
   color: var(--black);
 }
 
+.header {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: 100px;
+}
+
+.header-line {
+  border-bottom: 2px solid var(--black);
+  margin: 80px;
+  z-index: -1;
+  grid-column: 1 / 11;
+}
+
+.header-circle-big {
+  height: 80px;
+  width: 80px;
+  background-color: var(--pink);
+  border-radius: 100%;
+  grid-column: 10 / 11
+}
+
+
+
 .projects-main {
   display: flex;
   flex-direction: column;
