@@ -4,17 +4,20 @@ function Splash() {
   return (
     <div className="splash-main">
       <h1>Emma Gerigscott</h1>
-      <ul>
-        <li>
+      <div className="splash-circle-big"></div>
+      <div className="splash-circle-small"></div>
+      <ul className="nav">
+        <li className="nav-link">
           <Link to="/projects">Projects</Link>
         </li>
-        <li>
+        <li className="nav-link">
           <Link to="/about">About</Link>
         </li>
-        <li>
+        <li className="nav-link">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
+      <div className="bottom-triangle"></div>
     </div>
   );
 }
