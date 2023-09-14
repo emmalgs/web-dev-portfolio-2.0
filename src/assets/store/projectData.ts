@@ -12,7 +12,7 @@ const allProjects = [
     title: "Corn Shack",
     description: "Get your corn at the Corn Shack! A React + JS website displaying types of corn that the user can click on to then buy from a bushel. The user even gets a corn wallet! Click on corn facts to read some corn facts. Add your own corn variety to the Corn Shack, if you like.",
     imgSrc: "./src/assets/img/cornshack.gif",
-    link: "https://github.com/emmalgs/cornshack"
+    link: "https://lighthearted-pothos-8d46d9.netlify.app/"
   },
   {
     id: 3,
@@ -20,6 +20,13 @@ const allProjects = [
     description: "Manage machines and engineers for your international factory. Built with C#, ASP.NET Core, MVC, MySQL, and Entity Framework Core.",
     imgSrc: "./src/assets/img/factory.gif",
     link: "https://github.com/emmalgs/Factory.Solution"
+  },
+  {
+    id: 4,
+    title: "Painting Portfolio",
+    description: "A vanilla JS website of my paintings and drawings.",
+    imgSrc: "./src/assets/img/paintingportfolio.gif",
+    link: "https://emmagerigscott.com"
   }
 ]
 
