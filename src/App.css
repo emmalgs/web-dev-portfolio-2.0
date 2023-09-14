@@ -1,18 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,400;0,700;1,200;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,400;0,700;1,200;1,400&display=swap");
 
 :root {
-  --pink: #FFDDDB;
+  --pink: #ffdddb;
   --black: #151515;
-  --green: #97CC04;
-  --blue: #0E34A0;
-  --orange: #E49B25;
+  --green: #97cc04;
+  --blue: #0e34a0;
+  --orange: #e49b25;
 }
 
 body {
-  font-family: 'Chivo', Helvetica, Arial, sans-serif;
+  font-family: "Chivo", Helvetica, Arial, sans-serif;
   color: var(--black);
 }
 
+/* SPLASH */
+
+.splash-circle-big {
+  height: 350px;
+  width: 350px;
+  padding: 20px;
+  background-color: var(--pink);
+  border-radius: 100%;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+
+/* .splash-circle-small {
+  height: 140px;
+  width: 140px;
+  background-color: var(--green);
+  border-radius: 100%;
+  position: absolute;
+  top: 30%;
+  left: 32%;
+} */
+
+.splash-main .nav {
+  list-style: none;
+  grid-area: 4 / 7 / 9 / 11;
+}
+
+/* HEADER */
 .header {
   display: grid;
   grid-template-columns: repeat(10, 10%);
@@ -31,10 +60,8 @@ body {
   width: 80px;
   background-color: var(--pink);
   border-radius: 100%;
-  grid-column: 10 / 11
+  grid-column: 10 / 11;
 }
-
-
 
 .projects-main {
   display: flex;
@@ -49,7 +76,6 @@ body {
   margin: 0 0 0 -50px;
   font-size: 48px;
   line-height: 40px;
-
 }
 
 .project-card {
@@ -138,7 +164,7 @@ body {
 }
 
 .pd-link {
-  grid-area: 10 / 1 / 11 / 11
+  grid-area: 10 / 1 / 11 / 11;
 }
 
 .pd-back-btn {
@@ -151,7 +177,7 @@ body {
   grid-area: 1 / 10 / 2 / 11;
 }
 
-@keyframes logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
@@ -159,10 +185,3 @@ body {
     transform: rotate(360deg);
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
