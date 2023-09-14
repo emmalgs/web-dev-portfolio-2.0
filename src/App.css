@@ -26,6 +26,12 @@ body {
   left: 20%;
 }
 
+.splash-circle-big img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* .splash-circle-small {
   height: 140px;
   width: 140px;

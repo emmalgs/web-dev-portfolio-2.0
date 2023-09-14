@@ -28,7 +28,7 @@ function Splash() {
         })}
       </div>
       <div className="splash-circle-big">
-        <img src={anchovies} alt="anchovies" height={"380px"}/>
+        <img src={anchovies} alt="anchovies" height={"380px"} />
       </div>
       <div className="splash-circle-small"></div>
       <div className="splash-gif"></div>
