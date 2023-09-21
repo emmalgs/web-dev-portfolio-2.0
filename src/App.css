@@ -42,6 +42,14 @@ body {
   left: 32%;
 } */
 
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
 .splash-main .nav {
   list-style: none;
   grid-area: 4 / 7 / 9 / 11;
