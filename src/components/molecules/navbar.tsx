@@ -12,9 +12,9 @@ interface NavBarProps {
 function NavBar(props: NavBarProps) {
   return props.links.map((link: Link) => {
     return (
-      <li className="nav-link">
+      <div className="nav-link">
         <Link to={link.path}>{link.name}</Link>
-      </li>
+      </div>
     );
   });
 }
