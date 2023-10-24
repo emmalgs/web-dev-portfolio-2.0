@@ -22,8 +22,8 @@ body {
   background-color: var(--pink);
   border-radius: 100%;
   position: absolute;
-  top: 15%;
-  left: 20%;
+  top: 100px;
+  left: 250px;
 }
 
 .splash-circle-big img {
