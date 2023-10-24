@@ -6,12 +6,10 @@ function Header() {
 
   const displayDropDownNav = () => {
     setDisplayNav(true);
-    console.log(displayNav);
   };
 
   const hideDropDownNav = () => {
     setDisplayNav(false);
-    console.log(displayNav);
   }
 
   const dropDownNav = () => {
@@ -21,6 +19,7 @@ function Header() {
           { name: "Projects", path: "/projects" },
           { name: "About", path: "/about" },
           { name: "Contact", path: "/contact" },
+          { name: "Home", path: "/"}
         ]}
       />
     );
