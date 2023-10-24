@@ -1,10 +1,37 @@
-import { Link } from "react-router-dom";
+import NavBar from "./molecules/navbar";
+import { useState } from "react";
 import "../App.css";
 import anchovies from "../assets/img/anchovies.gif";
 
 function Splash() {
+  const [displayNav, setDisplayNav] = useState(false);
+
+  const displayNavigation = () => {
+    setDisplayNav(true);
+  };
+
+  const hideNavigation = () => {
+    setDisplayNav(false);
+  };
+
+  const navigation = () => {
+    return (
+      <NavBar
+        links={[
+          { name: "Projects", path: "/projects" },
+          { name: "About", path: "/about" },
+          { name: "Contact", path: "/contact" },
+        ]}
+      />
+    );
+  };
+
   return (
-    <div className="splash-main">
+    <div
+      className="splash-main"
+      onMouseEnter={displayNavigation}
+      onMouseLeave={hideNavigation}
+    >
       <div className="splash-text">
         {"EMMA GERIGSCOTT".split("").map((letter, index) => {
           return (
@@ -15,11 +42,11 @@ function Splash() {
                 fontSize: "38px",
                 width: "20px",
                 height: "250px",
-                top: "9.6%",
-                left: "34.5%",
+                top: "45px",
+                left: "436px",
                 position: "absolute",
                 transformOrigin: "bottom center",
-                animation: `spin 10s linear ${index * -0.5}s infinite`,
+                animation: `spin 20s linear ${index * -0.5}s infinite`,
               }}
             >
               {letter}
@@ -30,20 +57,7 @@ function Splash() {
       <div className="splash-circle-big">
         <img src={anchovies} alt="anchovies" height={"380px"} />
       </div>
-      <div className="splash-circle-small"></div>
-      <div className="splash-gif"></div>
-      <ul className="nav">
-        <li className="nav-link">
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li className="nav-link">
-          <Link to="/about">About</Link>
-        </li>
-        <li className="nav-link">
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-      <div className="bottom-triangle"></div>
+      <div>{displayNav ? navigation() : null}</div>
     </div>
   );
 }
