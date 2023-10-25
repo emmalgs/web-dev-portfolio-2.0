@@ -16,13 +16,17 @@ function Splash() {
 
   const navigation = () => {
     return (
-      <NavBar
-        links={[
-          { name: "Projects", path: "/projects" },
-          { name: "About", path: "/about" },
-          { name: "Contact", path: "/contact" },
-        ]}
-      />
+      <>
+        <div className="splash-nav-line"></div>
+        <div className="splash-nav-circle"></div>
+        <NavBar
+          links={[
+            { name: "Projects", path: "/projects" },
+            { name: "About", path: "/about" },
+            { name: "Contact", path: "/contact" },
+          ]}
+        />
+      </>
     );
   };
 
@@ -31,6 +35,11 @@ function Splash() {
       className="splash-main"
       onMouseEnter={displayNavigation}
       onMouseLeave={hideNavigation}
+      style={{
+        margin: "50px",
+        height: "40vh",
+        width: "90vw",
+      }}
     >
       <div className="splash-text">
         {"EMMA GERIGSCOTT".split("").map((letter, index) => {
@@ -57,7 +66,7 @@ function Splash() {
       <div className="splash-circle-big">
         <img src={anchovies} alt="anchovies" height={"380px"} />
       </div>
-      <div>{displayNav ? navigation() : null}</div>
+      <div className="splash-nav">{displayNav ? navigation() : null}</div>
     </div>
   );
 }
