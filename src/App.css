@@ -27,17 +27,18 @@ body {
 .splash-nav a {
   color: var(--orange);
   text-decoration: underline;
-  text-decoration-color: var(--blue);
+  text-decoration-color: var(--black);
   text-shadow: var(--pink) 1px 0 1px;
 }
 
 .splash-nav a:hover {
-  color: var(--blue);
+  color: var(--black);
   text-decoration-color: var(--orange);
+  text-shadow: none;
 }
 
 .splash-nav-line {
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 2px solid var(--black);
   z-index: -3;
   position: absolute;
   top: 63.5px;
@@ -61,7 +62,7 @@ body {
   width: 350px;
   padding: 20px;
   background-color: var(--pink);
-  border: 2px solid var(--blue);
+  border: 2px solid var(--black);
   border-radius: 100%;
   position: absolute;
   top: 100px;
@@ -69,7 +70,7 @@ body {
 }
 
 .splash-letter {
-  color: var(--blue);
+  color: var(--black);
 }
 
 .splash-circle-big img {
