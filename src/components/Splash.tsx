@@ -2,6 +2,7 @@ import NavBar from "./molecules/navbar";
 import { useState } from "react";
 import "../App.css";
 import anchovies from "../assets/img/anchovies.gif";
+import dragon from "../assets/img/dragon.gif";
 
 function Splash() {
   const [displayNav, setDisplayNav] = useState(false);
@@ -41,6 +42,10 @@ function Splash() {
         width: "90vw",
       }}
     >
+      <div className="splash-backdrop"></div>
+      <div className="splash-bg-gif">
+        <img src={dragon} alt="dragon" height={"800px"} />
+      </div>
       <div className="splash-text">
         {"EMMA GERIGSCOTT".split("").map((letter, index) => {
           return (
