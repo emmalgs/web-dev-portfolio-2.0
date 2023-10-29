@@ -137,6 +137,14 @@ body {
   grid-column: 10 / 11;
 }
 
+.header-nav:first-child {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+}
+
+/* PROJECTS */
+
 .projects-main {
   display: flex;
   flex-direction: column;
